@@ -1,0 +1,22 @@
+.hero {
+    background: url(../img/hero-bg.png) repeat center center;
+    max-width: 100%;
+    height: 810px;
+    @include flexible;
+    flex-direction: column;
+
+    @include _575 {
+        padding: 0 10px;
+    }
+
+    &__descr {
+        padding-top: 80px;
+        max-width: 730px;
+        font-size: 16px;
+        @include flexible;
+        text-align: center;
+        color: $whiteColor;
+        font-family: $font-pt-sans;
+        text-transform: uppercase;
+    }
+}

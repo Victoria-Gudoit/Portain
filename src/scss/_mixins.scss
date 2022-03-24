@@ -1,0 +1,39 @@
+@mixin font-face {
+    font-family: $font-pt-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $whiteColor;
+    line-height: 150%;
+}
+
+@mixin flexible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------------*/
+
+@mixin _1024 {
+    @media (max-width: (1024px)) {
+        @content;
+    }
+}
+
+@mixin _992 {
+    @media (max-width: (992px)) {
+        @content;
+    }
+}
+
+@mixin _767 {
+    @media (max-width: (767px)) {
+        @content;
+    }
+}
+
+@mixin _575 {
+    @media (max-width: (575px)) {
+        @content;
+    }
+}

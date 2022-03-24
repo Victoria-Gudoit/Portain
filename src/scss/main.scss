@@ -1,0 +1,13 @@
+@import "mixins";
+@import "vars";
+@import "settings";
+@import "../vendor/normalize.css";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/new-season";
+@import "./components/oldcollection";
+@import "./components/newproducts";
+@import "./components/brands";
+@import "./components/aboutus";
+@import "./components/footer";

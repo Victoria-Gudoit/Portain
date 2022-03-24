@@ -1,0 +1,105 @@
+.header-top {
+    height: 44px;
+    background-color: #000;
+
+    &__adaptive {
+        color: $gray;
+        display: none;
+
+        @include _767 {
+            display: block;
+        }
+
+        @include _575 {
+            display: none;
+        }
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.contacts {
+    display: flex;
+    color: $gray;
+    font-size: 12px;
+
+    div {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @include _767 {
+        display: none;
+    }
+}
+
+.register {
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $gray;
+        font-size: 12px;
+        p {
+            margin-left: 10px;
+        }
+    }
+}
+
+/*--------------------------------------*/
+.header-bottom {
+    height: 88px;
+    background: #0f0f0f;
+
+    &__img {
+        cursor: pointer;
+    }
+}
+.header-menu {
+    @include flexible;
+    height: 100%;
+
+    &__icons {
+        @include flexible;
+        cursor: pointer;
+
+        @include _767 {
+            padding-right: 20px;
+        }
+    }
+
+    &__icons-cart {
+        margin-right: 53px;
+    }
+}
+.header-nav {
+    @include flexible;
+    height: 100%;
+    &__link {
+        @include flexible;
+        color: $gray;
+        text-transform: uppercase;
+
+        padding: 0 20px;
+        height: 100%;
+
+        &:last-child {
+            margin-right: 40px;
+        }
+        &:hover {
+            color: $whiteColor;
+            background-color: #1f1f1f;
+        }
+    }
+
+    @include _767 {
+        display: none;
+    }
+}
