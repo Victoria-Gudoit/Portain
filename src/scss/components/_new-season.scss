@@ -12,7 +12,7 @@
     flex-direction: column;
     width: 100%;
     height: 730px;
-    padding: 0 30px 0 80px;
+    padding: 0 30px;
     background-color: #000;
 
     @include _992 {
@@ -27,6 +27,7 @@
 }
 
 .card {
+  gap: 50px;
   @include flexible;
   padding-top: 50px;
 
@@ -39,18 +40,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 50px;
-
-  @include _767 {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  @include _575 {
-  }
 
   &__img {
-    height: 260px;
+    height: 325px;
     display: flex;
     align-items: center;
     justify-content: center;

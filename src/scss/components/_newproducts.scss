@@ -1,23 +1,10 @@
 .newproducts {
-    background: #000;
-    &__catalog {
-        padding: 120px 0 110px 50px;
+  background: #000;
+  &__catalog {
+    padding: 120px 0 110px 0px;
+  }
 
-        @include _575 {
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-
-    &__card {
-        flex-wrap: wrap;
-    }
-}
-
-.product-card {
-    &__descr-price {
-        &_mb40 {
-            margin-bottom: 40px;
-        }
-    }
+  &__card {
+    flex-wrap: wrap;
+  }
 }

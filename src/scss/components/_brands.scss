@@ -1,14 +1,11 @@
 .brands {
-    padding: 60px 0 80px 0;
-    background: #0f0f0f;
-    &__item {
-        padding-top: 40px;
-        @include flexible;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    &__img {
-        margin-right: 30px;
-    }
+  padding: 60px 0 80px 0;
+  background: #0f0f0f;
+  &__item {
+    padding-top: 40px;
+    @include flexible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
